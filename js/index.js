@@ -30,12 +30,14 @@ const putDataResult = (results) =>{
         let div = document.createElement('div');
         let divContent = 
             `<div>
-                <img src="${element.image}" alt="${element.name}" />
-            </div>
-            <div>
-                <span><b>ID:</b>${element.id}</span>
-                <span><b>Name:</b>${element.name}</span>
-                <span><b>Status:</b>${element.species}</span>
+                <div>
+                    <img src="${element.image}" alt="${element.name}" />
+                </div>
+                <div>
+                    <span><b>ID:</b>${element.id}</span>
+                    <span><b>Name:</b>${element.name}</span>
+                    <span><b>Status:</b>${element.species}</span>
+                </div>
             </div>`
 
         div.innerHTML = divContent;
